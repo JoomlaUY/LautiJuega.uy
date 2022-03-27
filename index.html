@@ -8,190 +8,133 @@
 	<meta name="author" content="">
 
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="icon" type="image/ico" href="/icons/favicon.ico">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- Bootstrap Core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-
 	<!-- Custom Fonts -->
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
 		rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
-
 	<!-- Custom CSS -->
 	<link href="css/lautijuega-style.css" rel="stylesheet">
-
 	<title>LautiJuega.uy</title>
-
 
 </head>
 
 <body>
+	<main id="contenedor-main">
 
-	<main class="container text-center">
+		<header id="cabezal">
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">
-				<img src="img/lautijuega-favicon-256.png" width="30" height="30" alt="Logotipo Lauti Juega">
-				LautiJuega
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				<ul class="navbar-nav justify-content-center">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">LTV</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#">Aventuras</a>
-					</li>
+			<!-- NAVEGACION SUPERIOR -->
+			<nav class="menu-nav" id="menu-superior">
+				<ul class="menu-nav-ul">
+					<a href="#" class="menu-nav-active" id="inicio">
+						<li class="menu-nav-li">
+							<img src="icons/favicon-96x96.png" alt="inicio"><br>inicio
+						</li>
+					</a>
+					<a href="#" class="menu-nav-pasive" id="ltv">
+						<li class="menu-nav-li"><img src="icons/LTV-icon-96x96.png" alt=""><br>LTV ..s</li>
+					</a>
+					<a href="#" class="menu-nav-pasive" id="eltur">
+						<li class="menu-nav-li"><img src="icons/ElTur-icon-96x96.png" alt=""><br> El Tur ..s</li>
+					</a>
 				</ul>
+			</nav>
 
-			</div>
-		</nav>
+		</header>
+
+
+		<section id="bienvenida-section">
+			<h1 class="bienvenida-h1">Bienvenidos a</h1>
+			<img class="bienvenida-logo" src="img/Lauti-Juega-logo-600x250.png"
+				alt="Lauti Juega logo con letras de colores infantiles" />
+
+			<nav class="menu-nav" id="enlace-canal">
+				<ul class="menu-nav-ul">
+					<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube"
+						id="boton-youtube" target="_blank">
+						<li class="menu-nav-li">
+							<img src="icons/Youtube-icon-300x210.png" alt="inicio"><br>Visitá mi canal
+						</li>
+					</a>
+				</ul>
+			</nav>
 
 
 
-		<section class=" my-5" id="presentacion">
-			<h1 class="text-center">Bienvenidos a Lauti Juega</h1>
-			<img src="img/Lauti-Juega-logo-800.png" class="img-fluid py-5 mb-5" />
-			<hr class="py-5 my-5">
-			<img src="img/Among-Us-by-Lauti.png" class="img-fluid pb-5" alt="Among US by Lauti">
-			<hr class="py-5 my-5">
+
 		</section>
-		<section class="row justify-content-center" id="canal-youtube">
 
+		<section id="dibujo-section">
+			<img src="img/Among-Us-by-Lauti.png" alt="Dibujo de un personaje Among US firmado por Lauti">
+		</section>
+
+		<section id="youtube-link">
 			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw?sub_confirmation=1" title="Lauti Juega YouTube"
 				target="_blank">
 
-				<img class="text-center mx-auto d-block mt-5" src="img/200px-Logo_of_YouTube.png" alt="Suscríbete a mi canal">
+				<img src="img/200px-Logo_of_YouTube.png" alt="Logotipo de YouTube">
 			</a>
 
-			<h3 class="col-12 py-5">Visita mi canal de YouTube<br>
-				y suscríbete para ser el primero en saber<br>
-				cuando suba nuevo contenido</h3>
+			<p>Visita mi canal de YouTube
+				y suscríbete.</p>
+			<p> Así te avisa cuando subo nuevos videos</p>
+		</section>
+
+		<section class="youtube-section">
+			<figure class="youtube-video"><iframe src="https://www.youtube-nocookie.com/embed/0kXtLbYJe8g" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe></figure>
+			<figure class="youtube-video"><iframe width="auto" height="auto"
+					src="https://www.youtube-nocookie.com/embed/FJbOy8SJaI4?controls=0" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe></figure>
+
+		</section>
+		<section class="youtube-section">
+
+			<figure class="youtube-video"><iframe width="auto" height="auto"
+					src="https://www.youtube-nocookie.com/embed/IFhyvSVPAMA?controls=0" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe></figure>
+			<figure class="youtube-video"><iframe width="auto" height="auto"
+					src="https://www.youtube-nocookie.com/embed/4XAK17e5D88?controls=0" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe></figure>
 		</section>
 
 
-
-		<div class="youtube-video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0kXtLbYJe8g"
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		</div>
-
-
-		</section>
-
-
-
-		<div class="container text-center">
-
-			<div class="row justify-content-center">
-
-				<div class="col my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/FJbOy8SJaI4?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-
-				<div class="col my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/IFhyvSVPAMA?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-
-				<div class="col  my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/4XAK17e5D88?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="container text-center">
-
-			<hr class="my-5 ">
-
-			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw?sub_confirmation=1" title="Lauti Juega YouTube"
-				target="_blank">
-
-				<img src="img/Lauti-banner-canal.png" class="img-fluid " alt="Suscríbete a mi canal">
-			</a>
-
-			<hr class="my-5 ">
-
-		</div>
-
-
-		<div class="container text-center ">
-			<div class="row justify-content-center">
-
-				<div class="col my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/mZUiCTFV3eA?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-
-				<div class="col  my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/MKuMTnTAJKk?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-
-				<div class="col my-3">
-					<iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/nwGKb6EHCe0?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-
-			</div>
-
-			<hr class="my-5 pb-5">
-		</div>
 
 	</main>
 
-	<!-- Bootstrap JS -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<footer class="youtube-banner">
+		<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw?sub_confirmation=1" title="Lauti Juega YouTube"
+			target="_blank">
+			<img src="img/Lauti-banner-canal.png" class="youtube-banner-img " width="100%"
+				alt="Banner invitando a suscribirse al canal de YouTube - Suscríbete a mi canal"> </a>
+	</footer>
 </body>
 
 </html>
