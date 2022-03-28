@@ -21,20 +21,7 @@ let nuevoCabezal = `
 
 // obtener el elemento con ide cabezal del DOM
 const cabezal = document.getElementById("cabezal");
-// const cabezal = menuSuperior.innerHTML;
-// console.log("este es el menu Superior " + cabezal);
 
 //crear un elemento header
 cabezal.insertAdjacentHTML("afterbegin", nuevoCabezal);
 //añadirle contenido
-
-// Añadirlo como un nuevo elemento hijo
-
-// nav.innerHTML = nuevoCabezal;
-
-// let insertoCabezal = nuevoCabezal.innerHTML;
-console.log("aquí nav" + nuevoCabezal);
-
-// cabezalDiv = nuevoCabezal.innerHTML;
-// document.body.innerHTML(nuevoCabezal);
-// console.log("este es el nuevo cabezal  " + cabezalDiv);

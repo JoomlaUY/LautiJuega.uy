@@ -15,6 +15,9 @@
 # Ignora la carpeta node_modules
 node_modules
 
+#Ignorar carpeta de recursos
+_recursos
+
 # Ignora todos los archivos de texto
 *.txt
 
