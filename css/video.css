@@ -1,0 +1,43 @@
+.youtube-video {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.youtube-video::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
+}
+
+.youtube-video iframe,
+.youtube-video object,
+.youtube-video embed {
+  border: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+video.youtube-video {
+  height: auto;
+  max-width: 100%;
+}
+
+video.youtube-video::before {
+  content: none;
+}
+
+.youtube-video-4-3::before {
+  padding-bottom: 75%;
+}
+
+.youtube-video-1-1::before {
+  padding-bottom: 100%;
+}

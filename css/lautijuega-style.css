@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(video.css);
 /* CSS Document */
 html,
 body {
@@ -7,8 +8,6 @@ body {
   text-align: center;
   font-size: 20px;
   font-family: "Gochi Hand";
-    box-sizing: border-box;
-
 }
 html,
 body,
@@ -50,7 +49,6 @@ section {
   width: 100%;
   max-width: 900px;
   margin: auto;
-  padding: 1.4rem 0;
   /* background-color: yellow; */
 }
 
@@ -74,6 +72,7 @@ section {
   border-width: 0;
   box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(45 35 66 / 30%) 0 7px 13px -3px,
     #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
   color: #36395a;
   cursor: pointer;
   justify-content: center;
@@ -88,6 +87,7 @@ section {
 }
 
 .menu-nav li:hover {
+  opacity: 100%;
   box-shadow: rgb(45 35 66 / 40%) 0 4px 8px, rgb(45 35 66 / 30%) 0 7px 13px -3px,
     #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
@@ -108,14 +108,17 @@ section {
 #menu-superior .menu-nav-pasive {
   opacity: 50%;
 }
+#menu-superior .menu-nav-pasive:hover {
+  opacity: 100%;
+}
 
-
-/* bienvenida */  
+/* bienvenida */
 
 #bienvenida-section {
   display: flex;
   flex-flow: column;
-  padding:10px 20px;
+  padding: 10px 20px;
+  margin: 50px 0;
 }
 .bienvenida-h1 {
   color: #678;
@@ -126,12 +129,15 @@ section {
   width: 100%;
   max-width: 600px;
 }
-
-a#boton-youtube {
-  margin: 120px 0 50px 0;
+#enlace-canal {
+  /* border: solid 1px; */
+  margin: 50px 0;
 }
-#boton-youtube li {
-padding: 1rem;
+a#boton-youtube {
+}
+#boton-youtube img {
+  padding: 1rem;
+  max-width: 72px;
 }
 
 /* #dibujo */
@@ -139,21 +145,31 @@ padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
   border-radius: 2px;
-  /* margin: 4rem 0; */
-  /* background: #e0e0e0; */
-  padding: 10rem 0;
+  margin: 50px auto;
 }
+#dibujo-section h2 {
+  background-image: url("../img/trazos.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+
 #dibujo-section img {
   width: 100%;
   max-width: 900px;
   /* padding: 1rem; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
+
 /* #youtube link */
-#youtube-link p{  font-size: 1.2rem;
-margin: 0;
-padding: 0;
+#youtube-link p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
 }
 #youtube-link img {
   /* margin: 5rem 0; */
@@ -161,6 +177,7 @@ padding: 0;
 }
 .youtube-section {
   width: 100%;
+  max-width: 650px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -168,27 +185,6 @@ padding: 0;
   margin: 0;
   margin-bottom: 10px;
 }
-
-.youtube-video {
-    position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  clear: both;
-}
-}
-
-/* youtube-video */
-.youtube-video iframe {  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
- 
 
 /* youtube-banner */
 .youtube-banner {
