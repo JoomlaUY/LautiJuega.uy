@@ -16,9 +16,12 @@
 
 	<!-- CSS -->
 	<link href="css/lautijuega-style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slider.css">
+
 
 	<!-- JS -->
 	<script defer src="/js/main.js"></script>
+	<!-- <script defer src="/js/slider.js"></script> -->
 
 	<title>LautiJuega.uy - Bienvenidos</title>
 
@@ -29,23 +32,24 @@
 		<!-- CABEZAL -->
 		<header id="cabezal">
 			<nav class="contenedor-nav" id="menu-superior">
-				<form class="contenedor-menu-nav">
+				<form class="contenedor-menu-form">
 
-					<a href="index.html" class="menu-nav active" id="inicio">
-						<button class="menu-nav-button " type="button">
-							<img src="icons/favicon-96x96.png" alt="inicio"><br>inicio
+					<a href="index.html" id="inicio">
+						<button class="menu-nav-button active" type="button">
+							<img src="icons/LautiJuega-icon-96x96.png" alt="inicio">
+							<!-- <span>INICIO</span> -->
 						</button>
 					</a>
 
-					<a href="ltv.html" class="menu-nav" id="ltv">
+					<a href="ltv.html" id="ltv">
 						<button class="menu-nav-button " type="button">
-							<img src="icons/LTV-icon-96x96.png" alt="LTV..s logo"><br>LTV ..s
+							<img src="icons/LTV-icon-96x96.png" alt="LTV..s logo">
 						</button>
 					</a>
 
-					<a href="eltur.html" class="menu-nav" id="eltur">
+					<a href="eltur.html" id="eltur">
 						<button class="menu-nav-button " type="button">
-							<img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo"><br>El Tur ..s
+							<img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo">
 						</button>
 					</a>
 				</form>
@@ -53,274 +57,82 @@
 		</header>
 
 		<!-- SECCION Bienvenida -->
-		<section id="bienvenida-section">
+		<section class="bienvenida">
 			<img class="bienvenida-logo" src="img/Lauti-Juega-logo-600x250.png"
 				alt="Lauti Juega logo con letras hechas con pinceladas de colores" /><br>
-			<h1 class="bienvenida-h1">Bienvenidos a LautiJuega.uy</h1>
+			<h1>Bienvenidos a LautiJuega.uy</h1>
 
 		</section>
 
 
-		<nav class="menu-nav" id="enlace-canal">
+		<nav id="youtube-link">
 			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" id="boton-youtube"
 				target="_blank">
 				<img src="icons/youtube-icon.gif" alt="inicio"><br>Visitá mi canal
 			</a>
 		</nav>
 
+
+
 		<!-- SECCION dibujos  -->
-		<section id="dibujo-section">
-			<!-- <h2 class="titulo-trazos">mis dibujos</h2> -->
-			<img id="dibujo" src="img/Among-Us-by-Lauti.png" alt="Dibujo de un personaje Among US firmado por Lauti">
-		</section>
+		<!-- <button id="pulsador">BOTON PULSADOR</button><br><br><br> -->
 
+		<section class="slider__container" id="pulsador">
 
-		<!-- SECCION YouTube -->
-		<section class="youtube-section">
-			<!-- SCCION Shorts  -->
-			<h2 class="titulo-trazos">#shorts</h2>
-			<article class="shorts">
-				<figure>
-					<iframe width=" 315" height="560" src="https://www.youtube.com/embed/JAkoba_dKOM" frameborder="1"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+			<section class="slider__body  slider__body--show " data-id="1" data-name="Among Us version Lauti">
+				<figure class="slider__picture ">
+					<img src="img/dibujos/Among-Us-by-Lauti.png" alt="" class="slider__img">
 				</figure>
+			</section>
 
-				<figure>
-					<iframe width="315" height="560" src="https://www.youtube-nocookie.com/embed/HVr6NEwQzaY?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+			<section class="slider__body" data-id="2" data-name="Pikachu version Lauti">
+				<figure class="slider__picture">
+					<img src="img/dibujos/pikachu-by-Lauti.png" alt="" class="slider__img">
 				</figure>
+			</section>
 
-				<figure>
-					<iframe width="315" height="560" src="https://www.youtube-nocookie.com/embed/5ueYO6x_jwI?controls=0"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+			<section class="slider__body " data-id="3" data-name="Lauti La Película">
+				<figure class="slider__picture">
+					<img src="img/dibujos/Lauti--la-pelicula.png" alt="" class="slider__img">
 				</figure>
-				<figure class="video-container ancho">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/AA0YVo2UCj0" title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+			</section>
+
+			<section class="slider__body  " data-id="4" data-name="Tapa del disco VOLETTA">
+				<figure class="slider__picture">
+					<img src="img/dibujos/voletta-frente.jpg" alt="" class="slider__img">
 				</figure>
-			</article>
+			</section>
+
 
 		</section>
+		<div class="slider__button">
+			<img src="/icons/am_button_active.png" alt="" class="top_active">
+
+			<img src="/icons/am_button_hover.png" alt="" class="top_hover">
+			<img src="/icons/am_button.png" alt="">
 
 
-
-		<!-- SCCION Kronología  -->
-		<section class="kronologia-section">
-			<!-- NUEVA CRONOLOGIA ---- -->
-			<h2 class="titulo-trazos" id="kronologia-titulo">KRONOlogía</h2>
-
-			<!-- ------ AÑO 2018 ----- -->
-			<article class="cajaflex">
-				<h3>2018</h3>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/kf3RAj--0Qw"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ISyL4HO4h08"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-			</article>
-			<!-- ------ AÑO 2019  ----- -->
-			<article class="cajaflex">
-				<h3>2019</h3>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/37f7TvMDUs8"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ekoB_TKO1sg"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-			</article>
-
-			<!-- ------ AÑO 2020 ----- -->
-
-			<article class="cajaflex">
-				<h3>2020</h3>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/z26wU_OHdSU"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/FJbOy8SJaI4"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/flLUGc3_Eto"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/nwGKb6EHCe0"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-			</article>
-
-			<!-- ------ AÑO 2021 ----- -->
-
-			<article class="cajaflex">
-				<h3>2021</h3>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/2ISmWXM3vjw"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-
-				<div class="itemflex">
-					<figure class="video-container"><iframe width="560" height="315"
-							src="https://www.youtube.com/embed/zMAwBXzrf5Y" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/yws3MEdbups"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/VTcfuMEvPa4"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-			</article>
-
-			<!-- ------ AÑO 2022 ----- -->
-
-			<article class="cajaflex">
-				<h3>2022</h3>
-				<!-- Para no verte mas -->
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/spTsH03rvGs"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-				<!-- Plan B -->
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ho99OkXLMyQ"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-				<!-- Rap de ida y vuelta teatro 1ra rueda -->
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/rHusG-mGMmE"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</figure>
-				</div>
-				<!-- Ya no se que hacer conmigo -->
-				<div class="itemflex">
-					<figure class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Vzm1-y0FM44"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</figure>
-				</div>
-
-
-			</article>
-		</section>
-
-
-
-		<section id="youtube-link">
-			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw?sub_confirmation=1" title="Lauti Juega YouTube"
-				target="_blank">
-				<img src="icons/campanita-suscribirse.gif" alt="Campanita animada">
-			</a>
-			<p>Suscribite a mi canal de YouTube y activá la campanita.
-			</p>
-			<p> Así te avisa cuando subo nuevos videos.</p>
-			<h2> Gracias por visitar mi página!.</h2>
-		</section>
-
-
-
-	</main>
-	<section id="mario-escena">
+		</div>
 		<div id="mario-animado">
 			<img src="/img/mario corre.gif" alt="mario bros corriendo">
 		</div>
-	</section>
+
+
+	</main>
+
 
 	<footer class="cajaflex">
-		<div class="itemflex">
+		<div class="itemflex transparente">
 			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
-				<img src="img/Lauti-Juega-logo-800.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
+				<img src="img/Lauti-Juega-logo-800.png" width="100%" alt="Banner invitando a visitar el canal de YouTube">
+			</a>
 		</div>
-		<div class="itemflex">
+		<div class="itemflex transparente">
 			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
-				<img src="img/Lauti-banner-canal.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
+				<img src="img/Lauti-banner-canal.png" width="100%" alt="Banner invitando a visitar el canal de YouTube"> </a>
 		</div>
 	</footer>
+
 
 </body>
 

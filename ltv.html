@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link href="css/lautijuega-style.css" rel="stylesheet">
+  <link href="css/lautijuega-style.min.css" rel="stylesheet">
 
   <!-- JS -->
   <script defer src="/js/main.js"></script>
@@ -26,33 +26,37 @@
 
 <body id="ltv-page">
   <main id="contenedor-main">
-
+    <!-- CABEZAL -->
     <header id="cabezal">
       <nav class="contenedor-nav" id="menu-superior">
-        <form class="contenedor-menu-nav">
-          <a href="index.html" class="menu-nav" id="inicio">
+        <form class="contenedor-menu-form">
+
+          <a href="index.html" class="menu-nav " id="inicio">
             <button class="menu-nav-button " type="button">
-              <img src="icons/favicon-96x96.png" alt="inicio"><br>inicio
+              <img src="icons/LautiJuega-icon-128.png" alt="inicio">
+              <!-- <span>INICIO</span> -->
             </button>
           </a>
 
-          <a href="ltv.html" class="menu-nav active" id="ltv">
-            <button class="menu-nav-button " type="button">
-              <img src="icons/LTV-icon-96x96.png" alt="LTV..s logo"><br>LTV ..s
+          <a href="ltv.html" class="menu-nav" id="ltv">
+            <button class="menu-nav-button active" type="button">
+              <img src="icons/LTV-icon-96x96.png" alt="LTV..s logo">
             </button>
           </a>
 
           <a href="eltur.html" class="menu-nav" id="eltur">
             <button class="menu-nav-button " type="button">
-              <img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo"><br>El Tur ..s
+              <img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo">
             </button>
           </a>
         </form>
       </nav>
     </header>
 
-    <section id="bienvenida-section"><br>
-      <img class="ltv-logo" src="img/LTV-logo.gif"
+
+
+    <section class="bienvenida">
+      <img class="bienvenida-logo" src="img/LTV-logo.gif"
         alt="Logo LTV con un televisor antiguo en el cual se proyecta un ojo que mueve la mirada " />
     </section>
 
@@ -62,16 +66,6 @@
     <article class="cajaflex">
       <h2 class="titulo-trazos">LTV ..s videos</h2>
 
-      <!-- La mitologia -->
-
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/N0R79k5qXx4" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
 
 
       <!-- Plan B -->
@@ -95,16 +89,14 @@
         </figure>
       </div>
 
-      <!-- Rap de ida y vuelta sábado teatro de verano de colon -->
+      <nav id="youtube-link">
+        <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube"
+          id="boton-youtube" target="_blank">
+          <img src="icons/youtube-icon.gif" alt="inicio"><br>
+          <p>Visitá mi canal para ver más videos</p>
 
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/_8ctcSMp71c" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
+        </a>
+      </nav>
 
 
       <!-- tutorial Glu Glu -->
@@ -116,15 +108,7 @@
             allowfullscreen></iframe>
         </figure>
       </div>
-      <!--  Glu Glu en vivo -->
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tIDByP7DCEQ" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
+
       <!-- Ya no se que hacer conmigo sábado -->
       <div class="itemflex">
         <figure class="video-container">
@@ -145,35 +129,17 @@
             allowfullscreen></iframe>
         </figure>
       </div>
-      <!-- Para no verte mas -->
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/spTsH03rvGs" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
-
-      <!-- Chary garcia imitacion -->
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/nUcHPbbo-QA" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
-
     </article>
 
 
     <div id="youtube-link">
       <section class="bumper">
-        <video width="70%" height="auto" autoplay loop muted src="/video/ltv-bumper.mp4">
-        </video>
+        <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw?sub_confirmation=1" target="_blank">
+          <video width="70%" height="auto" autoplay loop muted src="/video/ltv-bumper.mp4">
+          </video>
+        </a>
       </section>
-      <p>Suscribite a mi canal de YouTube y activá la campanita.
+      <p>Suscribite y activá la campanita.
       </p>
       <p> Así te avisa cuando subo nuevos videos.</p>
     </div>
@@ -182,11 +148,11 @@
 
 
   <footer class="cajaflex">
-    <div class="itemflex">
+    <div class="itemflex transparente">
       <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
         <img src="img/Lauti-Juega-logo-800.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
     </div>
-    <div class="itemflex">
+    <div class="itemflex transparente">
       <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
         <img src="img/Lauti-banner-canal.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
     </div>

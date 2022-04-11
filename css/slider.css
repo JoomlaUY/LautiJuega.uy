@@ -1,0 +1,70 @@
+.slider {
+  width: 100%;
+}
+
+.slider__container {
+  display: grid;
+  grid-template-columns: 1vw 1fr 1vw;
+  grid-template-rows: auto;
+  align-content: center;
+  align-items: center;
+  background-color: #77ff1c;
+}
+.slider__body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1.5s;
+}
+
+.slider__body--show {
+  opacity: 100%;
+  pointer-events: unset;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  cursor: pointer;
+}
+
+.slider__button {
+  width: 120px;
+  height: 50px;
+  margin: 10px auto;
+  position: relative;
+  background-color: #77ff1c;
+  z-index: 900;
+}
+.slider__button img {
+  /* opacity: 1; */
+  /* z-index: 999; */
+  cursor: pointer;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  /* max-width: 120px; */
+}
+.slider__button img:hover,
+.slider__button img:active {
+  opacity: 0;
+}
+.slider__button img.top_hover:active {
+  opacity: 0;
+}
+
+.slider__button img.top_active:active {
+  opacity: 1;
+}
+
+.slider__button img.top_hover:hover {
+  opacity: 1;
+}

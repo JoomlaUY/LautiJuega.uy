@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link href="css/lautijuega-style.css" rel="stylesheet">
+  <link href="css/lautijuega-style.min.css" rel="stylesheet">
 
   <!-- JS -->
   <script defer src="/js/main.js"></script>
@@ -25,38 +25,40 @@
 
 <body id="eltur-page">
   <main id="contenedor-main">
-
+    <!-- CABEZAL -->
     <header id="cabezal">
       <nav class="contenedor-nav" id="menu-superior">
-        <form class="contenedor-menu-nav">
+        <form class="contenedor-menu-form">
 
           <a href="index.html" class="menu-nav " id="inicio">
             <button class="menu-nav-button " type="button">
-              <img src="icons/favicon-96x96.png" alt="inicio"><br>inicio
+              <img src="icons/LautiJuega-icon-128.png" alt="inicio">
+              <!-- <span>INICIO</span> -->
             </button>
           </a>
 
           <a href="ltv.html" class="menu-nav" id="ltv">
             <button class="menu-nav-button " type="button">
-              <img src="icons/LTV-icon-96x96.png" alt="LTV..s logo"><br>LTV ..s
+              <img src="icons/LTV-icon-96x96.png" alt="LTV..s logo">
             </button>
           </a>
 
-          <a href="eltur.html" class="menu-nav active" id="eltur">
-            <button class="menu-nav-button " type="button">
-              <img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo"><br>El Tur ..s
+          <a href="eltur.html" class="menu-nav" id="eltur">
+            <button class="menu-nav-button active" type="button">
+              <img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo">
             </button>
           </a>
-
         </form>
       </nav>
     </header>
 
-
-
-    <section id="bienvenida-section">
+    <!-- SECCION Bienvenida -->
+    <section class="bienvenida">
       <!-- <h1 class="bienvenida-h1">Bienvenidos a El Tur..s</h1> -->
-      <img class="ltv-logo" src="img/elTur-logo.png" alt="Lauti Juega logo con letras de colores infantiles" />
+      <img class="bienvenida-logo" src="img/elTur-logo.png" width="100%"
+        alt="Lauti Juega logo con letras de colores infantiles" />
+
+      <img id="mario3d" src="/img/mario-3d-arenga.gif" alt="">
     </section>
 
 
@@ -67,7 +69,7 @@
     <!-- ------ LTV videos ----- -->
 
     <article class="cajaflex">
-      <h2 class="titulo-trazos">El Tur..s videos</h2>
+      <h2 class="titulo-trazos">Aventuras El Tur..s</h2>
 
       <!-- Capitulo 1 -->
       <div class="itemflex">
@@ -90,15 +92,14 @@
         </figure>
       </div>
 
-      <!-- Capitulo 3 -->
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zMAwBXzrf5Y" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
+
+      <nav id="youtube-link">
+        <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube"
+          id="boton-youtube" target="_blank">
+          <img src="icons/youtube-icon.gif" alt="inicio">
+          <p>Visitá mi canal para ver más aventuras</p>
+        </a>
+      </nav>
 
       <!-- Capitulo 4 -->
 
@@ -122,16 +123,7 @@
         </figure>
       </div>
 
-      <!-- Capitulo 6 -->
 
-      <div class="itemflex">
-        <figure class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0kXtLbYJe8g" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </figure>
-      </div>
 
     </article>
     <section id="youtube-link">
@@ -153,11 +145,11 @@
   </section>
 
   <footer class="cajaflex">
-    <div class="itemflex">
+    <div class="itemflex transparente">
       <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
         <img src="img/Lauti-Juega-logo-800.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
     </div>
-    <div class="itemflex">
+    <div class="itemflex transparente">
       <a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
         <img src="img/Lauti-banner-canal.png" width="60%" alt="Banner invitando a visitar el canal de YouTube"> </a>
     </div>
