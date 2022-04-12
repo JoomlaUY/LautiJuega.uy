@@ -2,13 +2,13 @@
 @import url(video.css);
 @import url(menu.css);
 @import url(slider.css);
+@import url(mariobros.css);
 
 /* CSS Document */
 html {
   box-sizing: border-box;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  /* background-color: yellowgreen; */
 }
 
 *,
@@ -60,13 +60,26 @@ figure {
   margin: 0;
   padding: 0;
 }
+.apagado {
+  opacity: 0%;
+  z-index: 100;
+}
+.encendido {
+  opacity: 100%;
+  z-index: 900;
+}
+
 .ancho {
   width: 100% !important;
 }
-@media (max-width 767px) {
+@media (max-width: 767px) {
   .ancho {
     width: 90% !important;
   }
+}
+/* audio */
+#audio__jump {
+  display: none;
 }
 /* main */
 #contenedor-main {
@@ -116,10 +129,10 @@ img#mario3d {
 }
 
 .titulo-trazos {
-  background-image: url("../img/trazos.png");
+  background-image: url("../img/trazos.gif");
   width: 94%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   padding: 40px 0px;
 }
 
@@ -130,12 +143,13 @@ img#mario3d {
 }
 
 #youtube-link p {
+  color: #fff;
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
 }
-#youtube-link img {
-  /* padding: 1rem; */
+#suscribite-link {
+  padding: 2rem 1rem;
 }
 /* SECCION YouTube */
 .youtube-section {
@@ -170,71 +184,18 @@ img#mario3d {
   font-size: 2rem;
 }
 
-.kronologia-section article {
-  /* padding: 20px 0; */
-  /* margin-bottom: 50px; */
-}
-
 /* Videos Youtube insertadaos */
 
 /*  fin videos youtube */
-#mario-escena {
-  display: flex;
-  /* border: solid 2px red; */
-  flex-flow: column;
-  justify-content: flex-end;
-  background-image: url("../img/cielo-mario.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 600px;
-}
-#mario-animado {
-  /* border: solid 4px green;
-  background-color: rebeccapurple; */
-  width: 100%;
-  display: block;
-  /* background-color: aqua; */
-  background-image: url("../img/piso-mario.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  overflow: hidden;
-  position: relative;
-}
-
-#mario-animado img {
-  /* display: none; */
-  max-width: 120px;
-  margin-bottom: 20px;
-  animation: correr 8s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes correr {
-  0% {
-    margin-left: -110vw;
-    /* transform: scaleX(1); */
-  }
-  50% {
-  }
-
-  100% {
-    margin-left: 130vw;
-
-    /* transform: scaleX(-1); */
-  }
-}
 
 /* Pie */
-footer.cajaflex {
+.cajaflex {
   display: flex;
   flex-flow: column;
   width: 100%;
   padding: 50px 10px 20px 10px;
-  border-top: solid 1px #333;
+  background: #222;
+  color: #fff;
 }
 
 /* youtube-banner */
@@ -246,4 +207,10 @@ footer.cajaflex {
 
 .youtube-banner img {
   max-width: 100%;
+}
+
+.logo-footer {
+  max-width: 450px;
+  padding-top: 50px;
+  border-top: solid 1px #ccc;
 }

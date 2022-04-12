@@ -15,13 +15,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
 	<!-- CSS -->
-	<link href="css/lautijuega-style.css" rel="stylesheet">
+	<!-- <link href="css/lautijuega-style.css" rel="stylesheet" -->
 	<link rel="stylesheet" href="css/slider.css">
-
+	<!-- CSS Minify -->
+	<link href="css/lautijuega-style.css" rel="stylesheet">
 
 	<!-- JS -->
 	<script defer src="/js/main.js"></script>
-	<!-- <script defer src="/js/slider.js"></script> -->
+	<script defer src="/js/butt_among_us.js"></script>
 
 	<title>LautiJuega.uy - Bienvenidos</title>
 
@@ -31,6 +32,11 @@
 	<main id="contenedor-main">
 		<!-- CABEZAL -->
 		<header id="cabezal">
+
+			<audio id="audio__click">
+				<source type="audio/mp3" src="/sounds/click.mp3">
+			</audio>
+
 			<nav class="contenedor-nav" id="menu-superior">
 				<form class="contenedor-menu-form">
 
@@ -77,7 +83,7 @@
 		<!-- SECCION dibujos  -->
 		<!-- <button id="pulsador">BOTON PULSADOR</button><br><br><br> -->
 
-		<section class="slider__container" id="pulsador">
+		<section class="slider__container">
 
 			<section class="slider__body  slider__body--show " data-id="1" data-name="Among Us version Lauti">
 				<figure class="slider__picture ">
@@ -103,34 +109,68 @@
 				</figure>
 			</section>
 
-
+			<!-- BOTON PULSADOR CON IMG DE AMONG US -->
 		</section>
-		<div class="slider__button">
-			<img src="/icons/am_button_active.png" alt="" class="top_active">
+		<div class="slider__button" id="pulsador">
+			<audio id="audio__jump" controls>
+				<source type="audio/mp3" src="/sounds/mario-bros-jump.mp3">
+			</audio>
+			<img src="/icons/am_button.png" id="pulsador__pasive" class="slider__button--status"
+				alt="Botón rojo esperando ser pulsado">
+			<img src="/icons/am_button_hover.png" id="pulsador__over" class="slider__button--status"
+				alt="Botón rojo iluminado">
+			<img src="/icons/am_button_active.png" id="pulsador__active" class="slider__button--status"
+				alt="Botón rojo pulsado">
 
-			<img src="/icons/am_button_hover.png" alt="" class="top_hover">
-			<img src="/icons/am_button.png" alt="">
 
 
 		</div>
-		<div id="mario-animado">
-			<img src="/img/mario corre.gif" alt="mario bros corriendo">
-		</div>
+
+		<!-- SECCION MARIO BROS CORRIENDO -->
+		<section id="mario-animado">
+			<figure class="mario-figure">
+				<img src="/img/mario-corre.gif" alt="mario bros corriendo">
+				<!-- <img src="/img/mario-salta.gif" alt="mario bros corriendo"> -->
+			</figure>
+		</section>
 
 
 	</main>
 
 
+
 	<footer class="cajaflex">
-		<div class="itemflex transparente">
+		<section id="navegacion-pie">
+			<nav class="contenedor-nav" id="menu-inferior">
+				<form class="contenedor-menu-form">
+					<a href="index.html" id="inicio">
+						<button class="menu-nav-button active" type="button">
+							<img src="icons/LautiJuega-icon-96x96.png" alt="inicio">
+						</button>
+					</a>
+
+					<a href="ltv.html" id="ltv">
+						<button class="menu-nav-button " type="button">
+							<img src="icons/LTV-icon-96x96.png" alt="LTV..s logo">
+						</button>
+					</a>
+
+					<a href="eltur.html" id="eltur">
+						<button class="menu-nav-button " type="button">
+							<img src="icons/ElTur-icon-96x96.png" alt="El Tur..s logo">
+						</button>
+					</a>
+				</form>
+			</nav>
+		</section>
+
+
+		<div class="logo-footer">
 			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
 				<img src="img/Lauti-Juega-logo-800.png" width="100%" alt="Banner invitando a visitar el canal de YouTube">
 			</a>
 		</div>
-		<div class="itemflex transparente">
-			<a href="https://www.youtube.com/channel/UC63yksKEo_ltmeM639hfEYw" title="Lauti Juega YouTube" target="_blank">
-				<img src="img/Lauti-banner-canal.png" width="100%" alt="Banner invitando a visitar el canal de YouTube"> </a>
-		</div>
+
 	</footer>
 
 
