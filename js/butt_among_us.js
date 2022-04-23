@@ -13,6 +13,11 @@ pulsador.addEventListener("mousedown", () => cambiarBoton(2, "mouse down"));
 pulsador.addEventListener("mouseup", () => cambiarBoton(0, "mouse up"));
 pulsador.addEventListener("mouseleave", () => cambiarBoton(0, "mouse leave"));
 
+// eventos touch
+
+pulsador.addEventListener("touchstart", () => cambiarBoton(2, "touch start"));
+pulsador.addEventListener("touchend", () => cambiarBoton(0, "touch end"));
+
 function cambiarBoton(indice, texto) {
   pulsadorStatus[0].classList.remove("encendido");
   pulsadorStatus[1].classList.remove("encendido");

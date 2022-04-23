@@ -20,4 +20,4 @@ let faviconLinks = `	<!-- Favicon -->
 const headlink = document.getElementById("head-links");
 //inyectar HTML en el head
 headlink.insertAdjacentHTML("afterbegin", faviconLinks);
-console.log(headlink);
+// console.log(headlink);

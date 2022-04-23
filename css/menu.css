@@ -38,8 +38,8 @@
   will-change: box-shadow, transform;
 }
 #menu-superior button img {
-  max-width: 9vw;
-  margin: 1.2vw;
+  max-width: 15vw;
+  margin: 1vw;
 }
 #menu-superior span {
   font-size: 0.8rem;

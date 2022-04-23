@@ -45,7 +45,8 @@
 }
 
 .slider__button {
-  width: 180px;
+  max-width: 150px;
+  width: 25vw;
   position: relative;
   margin: auto;
   z-index: 900;
